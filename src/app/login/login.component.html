@@ -1,0 +1,45 @@
+
+<html>
+<body>
+<div class="k">
+  <br>
+  &nbsp;
+  <h1>&nbsp;LOGIN
+    <!-- &nbsp;
+    &nbsp;
+    &nbsp;
+    REGISTER
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    HOME -->
+  </h1>
+</div>
+ 
+<form (ngSubmit)="loginuser()">
+  
+<div class="madhu">
+    <div class="i">
+    <label for="USERNAME" id="username">USERNAME</label>
+    
+    &nbsp;<input type="text" placeholder="username" size="20"[(ngModel)]="model.username" name="username"/>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="s">
+    <label for="PASSWORD" id="password">PASSWORD</label>
+    
+   &nbsp; <input type="password" placeholder="password" size="20" [(ngModel)]="model.password" name="password" />
+    </div>
+    <button type="submit" (click)="loginuser()"class="btn">SIGN IN</button>
+</div>
+    
+    <br>
+    <br>
+    <a href>Forget password?</a>
+
+</form>
+ 
+ </body>
+ </html> 

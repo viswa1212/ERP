@@ -1,0 +1,31 @@
+<br>
+<br>
+<div class="col-md-8 offset-md-3">
+<h3>EMPLOYEE REGISTRATION</h3>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+    <label>First Name</label>
+    <input type="text" class="form-control" id="firstname"
+    [(ngModel)]="user.firstname" name="firstname">
+    <label>last Name</label>
+    <input type="text" class="form-control" id="lastname"
+    [(ngModel)]="user.lastname" name="lastname">
+    <label>EmailID</label>
+    <input type="text" class="form-control" id="emailid"
+    [(ngModel)]="user.emailid" name="emailid">
+    <label>User Name</label>
+    <input type="text" class="form-control" id="username"
+    [(ngModel)]="user.username" name="username">
+    <label>Password</label>
+    <input type="text" class="form-control" id="password"
+    [(ngModel)]="user.password" name="password">
+    <label>Dob</label>
+    <input type="text" class="form-control" id="dob"
+    [(ngModel)]="user.dob" name="dob">
+
+</div>
+<button class="btn btn-success" type="submit">REGISTER</button>
+
+
+</form>
+</div>
